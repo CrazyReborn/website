@@ -2,6 +2,7 @@ html {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 
 @font-face {
@@ -11,12 +12,15 @@ html {
 
 .page-one {
   min-height: 100vh;
+  width: auto;
   background-image: url('./images/page-one-bg.svg');
-  background-size: cover;
+  background-size: cover  ;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-left: 20px;
 }
+
 .name-and-title > h1 {
   font-size: 80px;
   color: #C62368;
@@ -28,3 +32,23 @@ html {
   font-size: 40px;
   margin-left: 5px;
 }
+
+.blob {
+  border-color: black;
+  width: 55%;
+  animation-name: blob-movement;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blob-movement {
+   0% {
+    transform: translate(0,0);
+   } 
+   50% {
+    transform: translate(0, -50px);
+   }
+   100% {
+    transform: translate(0,0);
+   } 
+  }
