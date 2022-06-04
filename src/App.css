@@ -14,7 +14,7 @@ html {
   min-height: 100vh;
   width: auto;
   background-image: url('./images/page-one-bg.svg');
-  background-size: cover  ;
+  background-size: 100%  ;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,10 +35,44 @@ html {
 
 .blob {
   border-color: black;
-  width: 55%;
+  width: 800px;
   animation-name: blob-movement;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+.nav-container {
+  width: 50%;
+}
+
+.navbar {
+  object-position: center;
+  width: max-content;
+  z-index: 2;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar > ul > li {
+  list-style-type: none;
+  font-size: 250%;
+  color: black;
+  font-family: barlow-condensed-light;
+  animation: navbar-item-out;
+  animation-timing-function: ease;
+  animation-duration: 0.25s;
+  animation-fill-mode:forwards;
+}
+
+.navbar > ul > li:hover {
+  animation: navbar-item-in;
+  animation-timing-function: ease;
+  animation-duration: 0.25s;
+  animation-fill-mode:forwards;
 }
 
 @keyframes blob-movement {
@@ -51,4 +85,22 @@ html {
    100% {
     transform: translate(0,0);
    } 
+  }
+
+  @keyframes navbar-item-in {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(5%, 0);
+    }
+  }
+
+  @keyframes navbar-item-out {
+    from {
+      transform: translate(5%, 0);
+    }
+    to {
+      transform: translate(0, 0);
+    }
   }

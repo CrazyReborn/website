@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactComponent as Blob } from '../images/blob.svg';
+import Navbar from './Navbar';
 
 export default function PageOne () {
   return (
@@ -8,7 +9,10 @@ export default function PageOne () {
         <h1 className="my-name">Vladislav Kuznetsov</h1>
         <h2 className="my-title">Software Developer</h2>
       </div>
+      <div className='nav-container'>
+        <Navbar />
         <Blob className="blob" />
+      </div>
     </div>
   )
 }
