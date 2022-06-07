@@ -2,7 +2,14 @@ import React from 'react';
 import YTLogo from '../images/yt_logo_mono_dark.png';
 import GHLogo from '../images/GitHub-Mark-Light-64px.png';
 
-export default function ProjectPreview(description: string, screenshot: string) {
+interface ProjectInfo {
+  description: string,
+  screenshot: string,
+}
+
+export default function ProjectPreview(props: ProjectInfo) {
+  const screenshot = props.screenshot;
+  const description = props.description;
   return (
     <div className="project-preview">
       <img src={screenshot} />
