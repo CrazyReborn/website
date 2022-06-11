@@ -2,24 +2,29 @@
   display: flex;
   flex-direction: column;
   margin-top: 5%;
+  min-width: 380px;
+  width: 30%;
 }
 
 .project-preview > img {
-  width: 512px;
-  height: 337px;
+  height: 312px;
+  width: auto;
 }
 
 .project-description {
   background-color: #1D1D1D;
-  width: 512px;
+  width:100%;
+  height: auto;
   font-size: 34px;
   flex-grow: 1;
 }
 
 .links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5%;
+  padding-left: 5%;
+
 }
 
 .live-demo-link:link {
@@ -56,8 +61,39 @@
   width: 111px;
 }
 
+.yt-link {
+  max-width: 100%;
+  max-height: max-content;
+}
+
 p {
   word-break: normal;
   white-space: normal;
   margin: 5%;
+}
+
+@media screen and (max-width: 380px) {
+  .project-preview > img {
+    height: calc(max-content*0.7);
+  }
+  .project-description {
+    font-size: 24px;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links > a {
+    margin-bottom: 5%;
+  }
+
+  .live-demo-link:link::after {
+    display: none;
+  }
+
+  .project-preview {
+    min-width: 95%;
+  }
 }

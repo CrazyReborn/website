@@ -1,5 +1,5 @@
 .page-three > .mobile {
-  visibility: hidden;
+  display: none;
 }
 
 .page-three {
@@ -39,4 +39,16 @@
   margin-bottom: 5%;
   height: 220px;
   width: auto;
+}
+
+
+@media screen and (max-width: 845px) {
+  .page-three > .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-three > .desktop {
+    display: none;
+  }
 }
