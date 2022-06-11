@@ -8,21 +8,35 @@
   align-items: center;
   background-color: black;
   color: white;
+  height: max-content;
+  padding-top: 5%;
 }
 
 .page-three > h2 {
   justify-self: center;
+  font-family: barlow-condensed-light;
+  font-size: 64px;
+}
+
+.page-three > h2::after {
+  display: block;
+  content: " ";
+  background-color: #7443FF;
+  width: 100%;
+  height: 5px;
 }
 
 .page-three > .desktop {
   display: flex;
-  flex-direction: row;
+  padding: 5% 10%;
+  gap: auto 30%;
   flex-wrap: wrap;
+  flex-grow: 1;
   justify-content: space-around;
-  height: 100%;
 }
 
 .desktop > img {
+  margin-bottom: 5%;
   height: 220px;
   width: auto;
 }

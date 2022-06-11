@@ -1,6 +1,7 @@
 .project-preview {
   display: flex;
   flex-direction: column;
+  margin-top: 5%;
 }
 
 .project-preview > img {

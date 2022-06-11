@@ -18,11 +18,11 @@
   background-color: #7443FF;
   width: 100%;
   height: 5px;
-  transition: 0.25s;
 }
 
 .project-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
