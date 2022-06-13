@@ -13,6 +13,9 @@
 
 .project-description {
   background-color: #1D1D1D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width:100%;
   height: auto;
   font-size: 34px;
@@ -22,9 +25,9 @@
 .links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 5%;
-
+  justify-content: space-around;
+  justify-self: flex-end;
 }
 
 .live-demo-link:link {

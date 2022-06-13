@@ -45,10 +45,24 @@
 @media screen and (max-width: 845px) {
   .page-three > .mobile {
     display: flex;
-    flex-direction: column;
-  }
+    justify-content: space-around;
+    width: 100%;
+}
 
   .page-three > .desktop {
     display: none;
   }
+
+  .mobile > ul {
+    list-style-type: none;
+    font-size: 24px;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .page-three > h2 {
+    font-size: 40px;
+  }
+
 }

@@ -66,10 +66,14 @@ span.bar {
   }
 
   .name-and-title > h1 {
+    margin-top: 0;
+    margin-left: 5%;
     font-size: 46px;
+    word-break: normal;
   }
 
   .name-and-title > h2 {
-    font-size: 24px;
+    font-size: 36px;
+    margin-left: 5%;
   }
 }

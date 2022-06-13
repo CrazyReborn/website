@@ -1,0 +1,39 @@
+.contact-form {
+  background-color: #252525;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: min-content;
+  padding: 1% 5%;
+  gap: 10px;
+}
+
+.contact-form > h2 {
+  font-size: 3em;
+}
+
+.contact-form > label {
+  font-size: 1.5em;
+}
+
+.contact-form > button {
+  border:  none;
+  font-size: 1.5em;
+  width: min-content;
+  padding: 5px 2%;
+  outline: none;
+  color: #ffffff;
+  background-color: #4b2aa3;
+  font-family: barlow-condensed-light;
+}
+
+.contact-form > button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1012px) {
+  .contact-form {
+    width: 80%;
+  }
+}
