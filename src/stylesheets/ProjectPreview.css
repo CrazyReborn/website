@@ -18,7 +18,7 @@
   justify-content: space-between;
   width:100%;
   height: auto;
-  font-size: 34px;
+  font-size: 32px;
   flex-grow: 1;
 }
 
@@ -75,12 +75,19 @@ p {
   margin: 5%;
 }
 
+@media screen and (max-width: 800px) {
+  .project-description {
+    font-size: 24px;
+  }
+  .live-demo-link:link::after {
+    display: none;
+  } 
+}
+
+
 @media screen and (max-width: 380px) {
   .project-preview > img {
     height: calc(max-content*0.7);
-  }
-  .project-description {
-    font-size: 24px;
   }
   
   .links {

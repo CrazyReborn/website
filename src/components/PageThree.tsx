@@ -26,7 +26,7 @@ export default function PageThree () {
           <li>React</li>
         </ul>
         <ul>
-          <li>Node</li>
+          <li>Node.js</li>
           <li>Express</li>
           <li>MongoDB</li>
           <li>Java</li>
