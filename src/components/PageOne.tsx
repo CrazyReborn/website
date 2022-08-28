@@ -5,7 +5,7 @@ export default function PageOne() {
     <div className="page-one">
       <div className="name-and-title">
         <h1 className="my-name">
-          Hello, I am Vladislav
+          Vladislav
           <br />
           Kuznetsov
         </h1>

@@ -1,10 +1,11 @@
 import React from 'react';
-import JsLogo from '../images/js-icon-dark.png';
-import TsLogo from '../images/ts-mono.png';
+import JsLogo from '../images/js-mono-icon-changed.png';
+import TsLogo from '../images/ts-mono-icon-changed.png';
 import NodeLogo from '../images/nodejs-icon-logo-black-and-white.png';
 import ReactLogo from '../images/react-icon.png';
 import MongoLogo from '../images/mongodb-icon-green.png';
 import ExpressLogo from '../images/express-icon.png';
+import NestLogo from '../images/nestjs-mono-icon.png';
 import '../stylesheets/PageThree.css';
 
 export default function PageThree () {
@@ -18,6 +19,7 @@ export default function PageThree () {
         <img src={ReactLogo} />
         <img src={MongoLogo} />
         <img src={ExpressLogo} />
+        <img src={NestLogo} />
       </div>
       <div className="mobile" >
         <ul>
@@ -28,8 +30,8 @@ export default function PageThree () {
         <ul>
           <li>Node.js</li>
           <li>Express</li>
+          <li>Nest.js</li>
           <li>MongoDB</li>
-          <li>Java</li>
         </ul>
       </div>
     </div>
