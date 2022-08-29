@@ -6,20 +6,29 @@ import '../stylesheets/ProjectPreview.css';
 interface ProjectInfo {
   description: string,
   screenshot: string,
+  liveDemoLink: string,
+  youtubeLink: string,
+  githubLink: string,
 }
 
 export default function ProjectPreview(props: ProjectInfo) {
-  const screenshot = props.screenshot;
-  const description = props.description;
+  const { 
+    screenshot,
+    description,
+    liveDemoLink,
+    youtubeLink,
+    githubLink,
+  } = props
+  console.log(liveDemoLink);
   return (
     <div className="project-preview">
       <img src={screenshot} />
       <article className="project-description">
         <p>{description}</p>
         <ul className="links">
-          <a className="live-demo-link" href="#">Live Demo</a>
-          <a className="yt-link" href="#"><img className="yt-logo" src={YTLogo} /></a>
-          <a className="gh-link" href="#"><img className="gh-logo" src={GHLogo} /></a>
+          <a className="live-demo-link" href={liveDemoLink} target='_blank'>Live Demo</a>
+          <a className="yt-link" href={youtubeLink} target='_blank'><img className="yt-logo" src={YTLogo} /></a>
+          <a className="gh-link" href={githubLink} target='_blank'><img className="gh-logo" src={GHLogo} /></a>
       </ul>
       </article>
     </div>
